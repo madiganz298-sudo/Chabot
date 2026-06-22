@@ -1,0 +1,6 @@
+{
+  "name": "M4DiChat AI",
+  "description": "Modern AI chatbot powered by OpenRouter and Telegram Bot interface integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
