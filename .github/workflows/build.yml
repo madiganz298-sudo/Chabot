@@ -25,6 +25,10 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
 
+      - name: Force use default debug signing
+        run: |
+          sed -i '/signingConfig\s*=\s*signingConfigs\.getByName("debugConfig")/d' app/build.gradle.kts
+
       - name: Build Debug APK
         run: ./gradle assembleDebug --stacktrace
 
